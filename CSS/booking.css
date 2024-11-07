@@ -1,0 +1,156 @@
+body{
+    background: black;
+    color: white;
+}
+
+.b_container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+.car_images{
+    position: absolute;
+    top: 90px;
+    left: 30px;
+}
+
+.big_car{
+    height: 435;
+    width: 700px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.big_car img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.big_car img:hover{
+    transform: scale(1.2);
+}
+
+.small_car{
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.078);
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+}
+
+.small_car img{
+    margin: 10px 15px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.small_car img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgb(0, 0, 0);
+}
+
+.booking_form{
+    position: absolute;
+    top: 90px;
+    right: 50px;
+    width: 700px;
+}
+
+.car_content{
+    padding: 20px;
+    background-color: rgb(255, 225, 0);
+    display: flex;
+    justify-content: space-between;
+    color: rgb(34, 34, 34);
+    border-bottom: 10px solid white;
+}
+
+.car_name{
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.car_name h3{
+    text-transform: uppercase;
+}
+
+.car_name h2{
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 35px;
+    padding:50px 20px;
+    background-color:rgba(255, 255, 255, 0.078) ;
+}
+
+form input{
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 0 15px;
+    background-color: transparent;
+    border: 1.8px solid rgb(134, 134, 134);
+    color: white;
+    font-size: 20px;
+}
+
+.set{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.iset .input input{
+    width: 320px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    font-size: 19px;
+    color: yellow;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    background-color: yellow;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: .4s;
+}
+
+form button a{
+    color: black;
+}
+
+form button:hover{
+    background-color: rgb(4, 249, 0);
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: white;
+    border-radius: 5px;
+}

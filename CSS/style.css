@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: black;
+}
+
+.container img{
+    width: 1200px;
+}
+
+.text{
+    position: absolute;
+    color: transparent;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(125,125,125,0.23021708683473385) 75%, rgba(0,0,0,0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    top: 45px;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.bar{
+    position: absolute;
+    bottom: 30px;
+    width: 1200px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup, .login{
+    display: flex;
+    align-items: center;
+}
+
+.circle{
+    height: 130px;
+    width: 130px;
+    background: #121212;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rect{
+    height: 75px;
+    width: 300px;
+    background: #121212;
+    margin: -30px;
+    border-radius: 20px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rect a{
+    color: white;
+    text-decoration: none;
+}
+
+.rect:hover{
+    background: #292929;
+}
+
+
+.circle img{
+   width: 130px;
+   animation: tireAnimate 150s linear infinite ;
+}
+
+@keyframes tireAnimate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(3600deg);
+    }
+}
+
+.bar h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+
